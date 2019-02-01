@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <title>boot verhuur</title>
+  <style>
+    .mainDiv {
+      display: flex;
+    }
+    .data {
+      border: double;
+    }
+    .kiesBoot {
+      border: double;
+      background-color: #ddeeff;
+    }
+    .klantKomtTerug {
+      border: double;
+      background-color: #ddeeff;
+      width: 267px;
+    }
+  </style>
+</head>
+<body>
+  <div class="mainDiv">
+    <div class="kiesBoot">
+      <b>klant verterkt</b>
+      <br><br>
+      <b>kies boot </b>
+      <select id="bootNummerID">
+        <option value="boot 1">boot 1</option>
+        <option value="boot 2">boot 2</option>
+        <option value="boot 3">boot 3</option>
+        <option value="boot 4">boot 4</option>
+        <option value="boot 5">boot 5</option>
+      </select>
+      <br>
+      <b>kies vertrek tijd </b> <input id="vertrekTijdID" type="time">
+      <br>
+      <b>tochtnummer</b> <input id="tochtnummerID" type="text">
+      <br>
+      <button onclick="kiesBoot()">kies boot</button>
+    </div>
+    <div class="data">
+      <p id=dataID><p>
+    </div>
+   </div>
+   <br>
+   <div class="klantKomtTerug">
+     <b>klant komt terug</b>
+     <br><br>
+     <b>tochtnummer</b>
+     <input id="tochtnummerIDTerug" type="text">
+     <b>eind tijd </b> <input id="eindTijdID" type="time">
+     <button onclick="klantKomtTerug()">ok</button>
+   </div>
+<script src="index.js"></script>
+<script src="class/class_overzicht.js"></script>
+<script src="class/class_boottocht.js"></script>
+</body>
+</html>
