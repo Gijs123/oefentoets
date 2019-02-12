@@ -8,15 +8,22 @@
     }
     .data {
       border: double;
+      width: 700px;
     }
     .kiesBoot {
       border: double;
       background-color: #ddeeff;
+      width: 500px;
     }
     .klantKomtTerug {
       border: double;
       background-color: #ddeeff;
-      width: 267px;
+      width: 500px;
+    }
+    .prijs {
+      border: double;
+      background-color: #ddeeff;
+      width: 500px;
     }
   </style>
 </head>
@@ -44,14 +51,52 @@
       <p id=dataID><p>
     </div>
    </div>
+   <div class="mainDiv">
    <br>
    <div class="klantKomtTerug">
      <b>klant komt terug</b>
      <br><br>
      <b>tochtnummer</b>
      <input id="tochtnummerIDTerug" type="text">
+     <br>
      <b>eind tijd </b> <input id="eindTijdID" type="time">
+     <br>
      <button onclick="klantKomtTerug()">ok</button>
+   </div>
+     <div class="data">
+       <p id=dataID2><p>
+     </div>
+   </div>
+   <div class="mainDiv">
+     <div class="prijs">
+       <p id="startMin"></p>
+       <br>
+
+       <select id="weerTypeID">
+         <option value="zonnig">zonnig</option>
+         <option value="bewolkt">bewolkt</option>
+         <option value="neerslag">neerslag</option>
+       </select>
+
+       <select id="seizoenID">
+         <option value="lente">lente</option>
+         <option value="zomer">zomer</option>
+         <option value="herfst">herfst</option>
+         <option value="winter">winter</option>
+       </select>
+
+       <select id="drukteID">
+         <option value="rustig">rustig</option>
+         <option value="normaal">normaal</option>
+         <option value="druk">druk</option>
+       </select>
+       <br>
+       <button onclick="prijsBerekening()">ok</button>
+
+     </div>
+     <div class="data">
+       <p id=dataID3><p>
+     </div>
    </div>
 <script src="index.js"></script>
 <script src="class/class_overzicht.js"></script>
